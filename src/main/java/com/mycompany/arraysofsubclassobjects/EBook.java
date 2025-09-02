@@ -10,9 +10,21 @@ public class EBook extends Book
         this.fileSizeMB = fileSizeMB;
     }
 
-    @Override
+    public String isLargeFile() 
+    {
+       if (fileSizeMB > 5.0)
+       {
+           return "File is large";
+       }
+       else
+       {
+           return "File is small";
+       }
+    }
+     @Override
     public void displayInfo() 
     {
-        System.out.println("[eBook] " + title + " by " + author + " (" + fileSizeMB + " MB)");
+        System.out.println("[eBook] " + title + " by " + author + " (" + fileSizeMB + " MB)"
+                + "/n" + isLargeFile());
     }
 }

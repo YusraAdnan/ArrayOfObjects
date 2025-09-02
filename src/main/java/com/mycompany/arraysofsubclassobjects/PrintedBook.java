@@ -11,6 +11,11 @@ class PrintedBook extends Book
         this.pages = pages;
     }
 
+    public int estimateReadingHours(int pagesPerHour) 
+    {
+        return pages / pagesPerHour;
+    }
+    
     @Override
     public void displayInfo() 
     {
