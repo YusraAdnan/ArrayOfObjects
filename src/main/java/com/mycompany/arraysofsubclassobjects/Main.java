@@ -28,47 +28,6 @@ public class Main
         {
             b.displayInfo(); // dynamic binding → calls correct version
         } 
-//        Scanner scan = new Scanner(System.in);
-//
-//        System.out.print("How many books do you want to enter details for? ");
-//        int n = scan.nextInt();
-//        scan.nextLine(); // consume newline
-//
-//        Book[] library = new Book[n];
-//
-//        for (int i = 0; i < n; i++) 
-//        {
-//            System.out.print("Enter type (printed/ebook): ");
-//            String type = scan.nextLine();
-//
-//            System.out.print("Enter title: ");
-//            String title = scan.nextLine();
-//
-//            System.out.print("Enter author: ");
-//            String author = scan.nextLine();
-//
-//            if (type.equalsIgnoreCase("printed")) 
-//            {
-//                System.out.print("Enter number of pages: ");
-//                int pages = scan.nextInt();
-//                scan.nextLine();
-//                library[i] = new PrintedBook(title, author, pages);
-//            } 
-//            else
-//            {
-//                System.out.print("Enter file size (MB): ");
-//                double size = scan.nextDouble();
-//                scan.nextLine();
-//                
-//                library[i] = new EBook(title, author, size);
-//            }
-//            System.out.println("------------------------------------------------------");
-//        }
-//
-//        System.out.println("\nLibrary Collection:");
-//        for (int i = 0; i < library.length; i++) 
-//        {
-//            library[i].displayInfo(); // dynamic binding
-//        }
+
     }
 }
